@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        
+        .contenedor {
+            display: flex;
+            width: 80%;
+        }
+        .img-1 {
+            width: 20%;
+            height: 20%;
+            margin-right: 10px;
+            margin-top: 15px;
+        }
+        .img-2 {
+            width: 10%;
+            height: 10%;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--la etiqueta disply_flex hace que las imagenes queden en horizontal-->
+    <!--la etiqueta <div> permite insertar estilo css a un bloque de elementos-->
+    <!--la etiqueta <h1> representa el encabezado de nivel 1, el pricipal-->
+    <!--la etiqueta <form> indica que se esta creando un formulario-->
+    <!--el atributo "method" especifica como se envian los datos del formulario-->
+    <!--la etiqueta <a> agrega hipervinvulo-->
+    
+    <div class="formulario">
+        <h1>Inicio de sesion</h1>
+        <div class="contenedor">
+            <img class="img-1" src="https://i.postimg.cc/vZ4nk874/uis.png" alt="">
+            <img class="img-2" src="https://i.postimg.cc/Sx9t7dzt/html.png" alt"">
+        </div>
+        
+       <p></p>
+       
+        <form method="post">
+            <div class="username">
+                <input type="text" required>
+                <label>Nombre de usuario</label>
+                <i class='bx bxs-user'></i>                
+            </div>
+            <div class="Contraseña">
+                <input type="password">
+                <label>Contraseña</label>
+                <i class='bx bxs-lock'></i>
+            </div>
+            <input type="submit" value="Entrar">
+            <div class="recordar">
+                ¿Ha olvidado su contraseña? Haga clic <a href="#">aqui</a>
+            </div>
+            <div class="desarrollo">
+                Desarrollado por la <a href="https://uis.edu.co/es/">Universidad industrial de santander</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
